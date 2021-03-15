@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88D42EA5-D89A-405B-8280-A7E546478717}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POPN</RootNamespace>
+    <AssemblyName>POPN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>POPN.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\0_Bin\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\0_Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="POPNMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPNMainForm.Designer.cs">
+      <DependentUpon>POPNMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopNSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopNSetup.designer.cs">
+      <DependentUpon>PopNSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerMeterDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerMeterDisplay.Designer.cs">
+      <DependentUpon>PowerMeterDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SequenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SequenceForm.Designer.cs">
+      <DependentUpon>SequenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="POPNMainForm.resx">
+      <DependentUpon>POPNMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopNSetup.resx">
+      <DependentUpon>PopNSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveChangesBox.resx">
+      <DependentUpon>SaveChangesBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SequenceForm.resx">
+      <DependentUpon>SequenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SaveChangesBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveChangesBox.designer.cs">
+      <DependentUpon>SaveChangesBox.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="POPN.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AD9959EvalBdUsbK\AD9959EvalBdUsbK.csproj">
+      <Project>{b68a681d-4620-4169-9753-72e0c99eb612}</Project>
+      <Name>AD9959EvalBdUsbK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DACarter.ClientServer\DACarter.ClientServer.csproj">
+      <Project>{741631bc-e2fd-441f-a565-ea355787b303}</Project>
+      <Name>DACarter.ClientServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DACarter.PopUtilities\DACarter.PopUtilities\DACarter.PopUtilities.csproj">
+      <Project>{c10c6749-48e2-496a-9503-5449e2f34ce2}</Project>
+      <Name>DACarter.PopUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAQDevice\DAQDevice.csproj">
+      <Project>{78bed94f-01b9-446f-8084-145b3ec0753f}</Project>
+      <Name>DAQDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ippdefs\ippdefs.csproj">
+      <Project>{2a375df3-8404-4c52-bb24-9d51c2502b81}</Project>
+      <Name>ippdefs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POPCommServer\POPCommunication.csproj">
+      <Project>{68124b13-c2db-4574-a9f2-bd2672e4d4aa}</Project>
+      <Name>POPCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POPNService\POPNService.csproj">
+      <Project>{42bd505d-fa91-45cc-b860-ba2bb7bcfd69}</Project>
+      <Name>POPNService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProgressBar3\Source\Control\Xp ProgressBar.csproj">
+      <Project>{98348d7a-6606-4cea-bac9-859d435c5988}</Project>
+      <Name>Xp ProgressBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PulseGenDevice\PulseGenDevice.csproj">
+      <Project>{56d2f689-413d-4c58-a720-e1ad822cbf70}</Project>
+      <Name>PulseGenDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities.Graphics\Utilities.Graphics.csproj">
+      <Project>{67699c72-de24-4ae0-935f-2df92ed14274}</Project>
+      <Name>Utilities.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZGraphDac\ZGraphDac.csproj">
+      <Project>{2541686b-1673-43bf-af89-3163945db009}</Project>
+      <Name>ZGraphDac</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

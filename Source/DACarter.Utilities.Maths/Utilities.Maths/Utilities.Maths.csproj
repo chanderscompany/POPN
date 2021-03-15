@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8AE66ACC-0064-408A-9732-C40BB869E60A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DACarter.Utilities.Maths</RootNamespace>
+    <AssemblyName>DACarter.Utilities.Maths</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\0_Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\0_Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Iridium, Version=2008.8.16.470, Culture=neutral, PublicKeyToken=c061a3ec32cc0c6f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\MathNetNumerics\MathNetIridiumm(original)\MathNet.Iridium.dll</HintPath>
+    </Reference>
+    <Reference Include="NumericalMethodsLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\NumericalMethodsLibrary\1.0.0.0\NumericalMethodsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CurveFit.cs" />
+    <Compile Include="Evaluator.cs" />
+    <Compile Include="EvaluatorTokens\EvaluatorToken.cs" />
+    <Compile Include="EvaluatorTokens\EvaluatorTokenFactory.cs" />
+    <Compile Include="FFT.cs" />
+    <Compile Include="HSMethod.cs" />
+    <Compile Include="IntelMath.cs" />
+    <Compile Include="Moments.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EvaluatorTokens\FunctionBase.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Abs.cs" />
+    <Compile Include="EvaluatorTokens\Functions\ACos.cs" />
+    <Compile Include="EvaluatorTokens\Functions\ASin.cs" />
+    <Compile Include="EvaluatorTokens\Functions\ATan.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Ceil.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Cos.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Exp.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Floor.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Ln.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Log10.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Round.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Sin.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Sqrt.cs" />
+    <Compile Include="EvaluatorTokens\Functions\Tan.cs" />
+    <Compile Include="EvaluatorTokens\LeftBracket.cs" />
+    <Compile Include="EvaluatorTokens\NumberBase.cs" />
+    <Compile Include="EvaluatorTokens\Numbers\E.cs" />
+    <Compile Include="EvaluatorTokens\Numbers\Number.cs" />
+    <Compile Include="EvaluatorTokens\Numbers\Pi.cs" />
+    <Compile Include="EvaluatorTokens\OperatorBase.cs" />
+    <Compile Include="EvaluatorTokens\Operators\Addition.cs" />
+    <Compile Include="EvaluatorTokens\Operators\Division.cs" />
+    <Compile Include="EvaluatorTokens\Operators\Modulus.cs" />
+    <Compile Include="EvaluatorTokens\Operators\Multiplication.cs" />
+    <Compile Include="EvaluatorTokens\Operators\Power.cs" />
+    <Compile Include="EvaluatorTokens\Operators\Subtraction.cs" />
+    <Compile Include="EvaluatorTokens\RightBracket.cs" />
+    <Compile Include="Wavelet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DACarter.PopUtilities\DACarter.PopUtilities\DACarter.PopUtilities.csproj">
+      <Project>{c10c6749-48e2-496a-9503-5449e2f34ce2}</Project>
+      <Name>DACarter.PopUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ippdefs\ippdefs.csproj">
+      <Project>{2a375df3-8404-4c52-bb24-9d51c2502b81}</Project>
+      <Name>ippdefs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ipps\ipps.csproj">
+      <Project>{c1d7ab2f-fba6-4579-9a52-6f1a779eac5f}</Project>
+      <Name>ipps</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PulseGenDevice\PulseGenDevice.csproj">
+      <Project>{56d2f689-413d-4c58-a720-e1ad822cbf70}</Project>
+      <Name>PulseGenDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilities.Graphics\Utilities.Graphics.csproj">
+      <Project>{67699c72-de24-4ae0-935f-2df92ed14274}</Project>
+      <Name>Utilities.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilities\Utilities.csproj">
+      <Project>{047ba7b6-8ba0-4e2c-8d77-d833bd050a07}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZGraphDac\ZGraphDac.csproj">
+      <Project>{2541686b-1673-43bf-af89-3163945db009}</Project>
+      <Name>ZGraphDac</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

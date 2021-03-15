@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1D7AB2F-FBA6-4579-9A52-6F1A779EAC5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ipps</RootNamespace>
+    <AssemblyName>ipps_cs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\0_Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\0_Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\0_Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ipps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ippdefs\ippdefs.csproj">
+      <Project>{2A375DF3-8404-4C52-BB24-9D51C2502B81}</Project>
+      <Name>ippdefs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippcore-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippcore-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippcorex86-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippcorex86-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ipps-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ipps-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippsp8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippsp8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippspx-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippspx-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippss8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippss8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippst7-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippst7-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippsv8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippsv8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippsw7-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippsw7-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\ippsx86-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\ippsx86-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\libiomp5md.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\libiomp5md.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\32bit\libiomp5md_32.dll">
+      <Link>Intel Integrated Performance Primitives\32bit\libiomp5md_32.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippcoreem64t-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippcoreem64t-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ipps-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ipps-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippse9-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippse9-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsem64t-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsem64t-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsm7-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsm7-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsmx-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsmx-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsn8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsn8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsu8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsu8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\ippsy8-6.1.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\ippsy8-6.1.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\libiomp5md.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\libiomp5md.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\64bit\libiomp5md_64.dll">
+      <Link>Intel Integrated Performance Primitives\64bit\libiomp5md_64.dll</Link>
+    </Content>
+    <Content Include="..\Libs\Intel Integrated Performance Primitives\Copy ReadMe.txt">
+      <Link>Intel Integrated Performance Primitives\Copy ReadMe.txt</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xCopy "..\Libs\Intel Integrated Performance Primitives\64bit\*.*" $(TargetDir)
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

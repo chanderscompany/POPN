@@ -348,3 +348,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/Installer/Compiled Files/32bit/DACarter.NOAA.Hardware_32bit.dll
