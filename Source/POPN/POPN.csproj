@@ -203,7 +203,7 @@
       <Project>{42bd505d-fa91-45cc-b860-ba2bb7bcfd69}</Project>
       <Name>POPNService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProgressBar3\Source\Control\Xp ProgressBar.csproj">
+    <ProjectReference Include="..\ProgressBar3\Xp ProgressBar.csproj">
       <Project>{98348d7a-6606-4cea-bac9-859d435c5988}</Project>
       <Name>Xp ProgressBar</Name>
     </ProjectReference>
