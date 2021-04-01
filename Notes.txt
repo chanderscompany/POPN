@@ -1,3 +1,14 @@
+Installation:
+To Install the PopNServer Service:
+- Run PopN.exe 'as adminstrator' - PopN will install the service for you
+OR
+- Run CMD as administartor
+- CD to the directory containing PopNService.exe
+- Type PopNService.exe /i
+- /u = uninstall service, /stop = stop service, no argument = start service
+
+
+
 LibUSBK: (DDS)
  Projects: AD9959EvalBd, DaveCarter.NOAA.Hardware 
  Version in use is LibUsbDotNet.dll 2.2.5.61
