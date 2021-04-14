@@ -1553,7 +1553,8 @@ namespace POPN {
                         }
                         else {
                             // message only
-                            MessageBox.Show("Must ENABLE DDS with 100 MHz Sync clock\n for PulseBlaster without internal clock.", "FMCW Page Error", MessageBoxButtons.OK);
+                            // 210414 Removed by Coy as it caused an infinate loop when not using a DDS. The PulseBlaster can use an onboard crystal instead
+                            // MessageBox.Show("Must ENABLE DDS with 100 MHz Sync clock\n for PulseBlaster without internal clock.", "FMCW Page Error", MessageBoxButtons.OK);
                         }
                     }
 
