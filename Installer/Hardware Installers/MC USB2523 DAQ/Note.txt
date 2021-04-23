@@ -1,0 +1,1 @@
+The mmcdaq.2.6.exe installer is too big for GitHub
