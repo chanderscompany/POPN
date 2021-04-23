@@ -14,7 +14,7 @@ namespace PopNService {
             try {
                 string appFolder = Application.StartupPath;
                 _exePath = Path.Combine(appFolder, "fx2loader.exe");
-                ProcessStartInfo psi = new ProcessStartInfo(_exePath, "-v 0456:EE06 AD9959_FW.hex");
+                ProcessStartInfo psi = new ProcessStartInfo(_exePath, "-v 0456:EE24 AD9959_FW.hex");
                 psi.WorkingDirectory = appFolder;
 
                 psi.RedirectStandardOutput = true;

@@ -667,7 +667,7 @@ namespace PopNService {
                 }
                 if (count > 0) {
                     string dev = (string)LibUsbK.GetValue("0");
-                    if (dev.IndexOf("PID_EE06", StringComparison.OrdinalIgnoreCase) >= 0) {
+                    if (dev.IndexOf("PID_EE24", StringComparison.OrdinalIgnoreCase) >= 0) {
                         SendStatusString("--Loading AD9959 firmware.");
                         LoadDDSFirmware.Run();
                         SendStatusString(LoadDDSFirmware.GetResults());
