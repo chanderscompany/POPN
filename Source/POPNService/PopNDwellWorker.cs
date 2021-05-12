@@ -671,6 +671,7 @@ namespace PopNService {
                         SendStatusString("--Loading AD9959 firmware.");
                         LoadDDSFirmware.Run();
                         SendStatusString(LoadDDSFirmware.GetResults());
+                        Thread.Sleep(5000);
                     }
                     else if (dev.IndexOf("PID_EE07", StringComparison.OrdinalIgnoreCase) >= 0) {
                         SendStatusString("--AD9959 already correctly renumerated.");
@@ -877,6 +878,9 @@ namespace PopNService {
 
             // POPREV: added ver 3.13 to make sure dds is off before we start
             try {
+                // Coy 210425 - Make sure the AD9959 DDS is renumerated - This needs to happen anytime the unit is power cycled
+                CheckDDSDeviceDriver();
+
                 _DDS = new AD9959EvalBd(100.0, 4, 5000.0, true);
                 //_DDS.ResetDDS();
                 _DDS = null;
