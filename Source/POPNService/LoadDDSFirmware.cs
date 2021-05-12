@@ -9,12 +9,14 @@ namespace PopNService {
         static string _output, _error;
         static string _exePath;
 
-        static public void Run() {
+        static public void Run(String address) {
 
             try {
                 string appFolder = Application.StartupPath;
                 _exePath = Path.Combine(appFolder, "fx2loader.exe");
-                ProcessStartInfo psi = new ProcessStartInfo(_exePath, "-v 0456:EE24 AD9959_FW.hex");
+                String cmd = "-v 0456:" + address + " AD9959_FW.hex";
+                ProcessStartInfo psi = new ProcessStartInfo(_exePath, cmd);
+ //               ProcessStartInfo psi = new ProcessStartInfo(_exePath, "-v 0456:EE24 AD9959_FW.hex");
                 psi.WorkingDirectory = appFolder;
 
                 psi.RedirectStandardOutput = true;

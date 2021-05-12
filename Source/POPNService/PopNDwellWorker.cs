@@ -667,16 +667,24 @@ namespace PopNService {
                 }
                 if (count > 0) {
                     string dev = (string)LibUsbK.GetValue("0");
-                    if (dev.IndexOf("PID_EE24", StringComparison.OrdinalIgnoreCase) >= 0) {
-                        SendStatusString("--Loading AD9959 firmware.");
-                        LoadDDSFirmware.Run();
+                    if (dev.IndexOf("PID_EE06", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        SendStatusString("--Loading AD9959 firmware to EE06.");
+                        LoadDDSFirmware.Run("EE06");
                         SendStatusString(LoadDDSFirmware.GetResults());
-                        Thread.Sleep(5000);
                     }
-                    else if (dev.IndexOf("PID_EE07", StringComparison.OrdinalIgnoreCase) >= 0) {
+                    else if (dev.IndexOf("PID_EE24", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        SendStatusString("--Loading AD9959 firmware to EE24.");
+                        LoadDDSFirmware.Run("EE24");
+                        SendStatusString(LoadDDSFirmware.GetResults());
+                    }
+                    else if (dev.IndexOf("PID_EE07", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
                         SendStatusString("--AD9959 already correctly renumerated.");
                     }
-                    else {
+                    else
+                    {
                         SendStatusString("--No DDS device found.");
                     }
                 }
