@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PopParameters xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <PopParametersVersion>20151208</PopParametersVersion>
-  <Source>C:\Git\PopN\Configs\Coy_HW.parx</Source>
+  <Source>C:\Git\PopN\Configs\Coy_DDS.parx</Source>
   <ArrayDim>
     <MAXBEAMS>10</MAXBEAMS>
     <MAXBEAMPAR>1</MAXBEAMPAR>
@@ -433,7 +433,7 @@
         </FmCwParameters>
       </FmCwParSet>
       <PowMeterPar>
-        <Enabled>true</Enabled>
+        <Enabled>false</Enabled>
         <OffsetDB>0</OffsetDB>
         <WriteIntervalSec>0</WriteIntervalSec>
       </PowMeterPar>
@@ -519,10 +519,10 @@
     <VelHighMS>7</VelHighMS>
   </SignalPeakSearchRange>
   <Debug>
-    <NoHardware>false</NoHardware>
+    <NoHardware>true</NoHardware>
     <NoPbx>true</NoPbx>
     <DebugToFile>true</DebugToFile>
-    <UseAllocator>false</UseAllocator>
+    <UseAllocator>true</UseAllocator>
     <SaveFilteredTS>false</SaveFilteredTS>
     <DoParallelTasks>true</DoParallelTasks>
   </Debug>

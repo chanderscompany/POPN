@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PopParameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<PopParameters xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <PopParametersVersion>20151208</PopParametersVersion>
-  <Source>D:\Configs\Coy_NoHardware.parx</Source>
+  <Source>C:\Git\PopN\Configs\Coy_NoHardware.parx</Source>
   <ArrayDim>
     <MAXBEAMS>10</MAXBEAMS>
     <MAXBEAMPAR>1</MAXBEAMPAR>
@@ -412,7 +412,7 @@
           <UseFilterCoeffs>false</UseFilterCoeffs>
           <UseFreqResp>true</UseFreqResp>
           <FilterFile>--Choose *.gain file--</FilterFile>
-          <AD9959Enabled>true</AD9959Enabled>
+          <AD9959Enabled>false</AD9959Enabled>
           <DDSRefClockMHz>100</DDSRefClockMHz>
           <DDSMultiplier>4</DDSMultiplier>
           <DDS3FreqStartHz>0</DDS3FreqStartHz>

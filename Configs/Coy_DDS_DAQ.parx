@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PopParameters xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <PopParametersVersion>20151208</PopParametersVersion>
-  <Source>C:\Git\PopN\Configs\Coy_HW.parx</Source>
+  <Source>C:\Git\PopN\Configs\Coy_DDS_DAQ.parx</Source>
   <ArrayDim>
     <MAXBEAMS>10</MAXBEAMS>
     <MAXBEAMPAR>1</MAXBEAMPAR>
